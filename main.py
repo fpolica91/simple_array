@@ -27,17 +27,30 @@ def get_sum(arr):
     sum_arr += elem
   return sum_arr
 
+
+# copy elements from array
 def simple_copy(arr):
   copy = []
   for elem in arr:
     copy.append(elem)
   return copy
 
+# Deep copy of elements from array
 def deep_copy(arr):
   if not isinstance(arr, list):
     return arr
   else:
    return [deep_copy(elem) for elem in arr]
+  
+
+# joining elements
+def join_array(arr, separator):
+  joined =""
+  for i in range(len(arr)):
+    joined += str(arr[i])
+    if i < len(arr) -1:
+      joined += separator
+  return joined
 
 
   
@@ -46,4 +59,4 @@ print(get_max(numbers))
 print(get_sum(numbers))
 print(simple_copy(numbers))
 print(deep_copy(deep))
-
+print(join_array([1,2,3], "*"))
