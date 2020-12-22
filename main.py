@@ -2,6 +2,7 @@
 # get the minimum array value
 
 numbers = [1,4,6,7,9,77,0]
+deep = [1,2,3, [1,2,3,4], [4,55,55]]
 
 def get_min(arr):
 #initialize min to infinity
@@ -26,9 +27,23 @@ def get_sum(arr):
     sum_arr += elem
   return sum_arr
 
+def simple_copy(arr):
+  copy = []
+  for elem in arr:
+    copy.append(elem)
+  return copy
+
+def deep_copy(arr):
+  if not isinstance(arr, list):
+    return arr
+  else:
+   return [deep_copy(elem) for elem in arr]
+
 
   
 print(get_min(numbers))
 print(get_max(numbers))
 print(get_sum(numbers))
+print(simple_copy(numbers))
+print(deep_copy(deep))
 
