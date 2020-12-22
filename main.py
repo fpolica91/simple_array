@@ -52,6 +52,14 @@ def join_array(arr, separator):
       joined += separator
   return joined
 
+#concatenate
+def concatenate(arr1, arr2):
+  conc = []
+  for elem in arr1:
+    conc.append(elem)
+  for elem in arr2:
+    conc.append(elem)
+  return conc
 
   
 print(get_min(numbers))
@@ -60,3 +68,4 @@ print(get_sum(numbers))
 print(simple_copy(numbers))
 print(deep_copy(deep))
 print(join_array([1,2,3], "*"))
+print(concatenate([1,2,3], [3,5,6]))
