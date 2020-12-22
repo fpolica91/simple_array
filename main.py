@@ -61,7 +61,13 @@ def concatenate(arr1, arr2):
     conc.append(elem)
   return conc
 
-  
+def extend(arr1,arr2):
+  for elem in arr2:
+    arr1.append(elem)
+  return arr1
+
+
+
 print(get_min(numbers))
 print(get_max(numbers))
 print(get_sum(numbers))
@@ -69,3 +75,4 @@ print(simple_copy(numbers))
 print(deep_copy(deep))
 print(join_array([1,2,3], "*"))
 print(concatenate([1,2,3], [3,5,6]))
+print(extend([1,2,3], [2,3,4]))
