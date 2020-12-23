@@ -66,6 +66,14 @@ def extend(arr1,arr2):
     arr1.append(elem)
   return arr1
 
+def sum(n):
+ if n == 0:
+   return 0
+ else:
+   return sum(n - 1) + n
+
+ 
+
 
 
 print(get_min(numbers))
@@ -76,3 +84,4 @@ print(deep_copy(deep))
 print(join_array([1,2,3], "*"))
 print(concatenate([1,2,3], [3,5,6]))
 print(extend([1,2,3], [2,3,4]))
+print(sum(4))
