@@ -1,4 +1,5 @@
-
+from map import *
+from max_sum_array import *
 # get the minimum array value
 
 numbers = [1,4,6,7,9,77,0]
@@ -67,6 +68,7 @@ def extend(arr1,arr2):
   return arr1
 
 def sum(n):
+ print(n)
  if n == 0:
    return 0
  else:
@@ -76,12 +78,12 @@ def sum(n):
 
 
 
-print(get_min(numbers))
-print(get_max(numbers))
-print(get_sum(numbers))
-print(simple_copy(numbers))
-print(deep_copy(deep))
-print(join_array([1,2,3], "*"))
-print(concatenate([1,2,3], [3,5,6]))
-print(extend([1,2,3], [2,3,4]))
-print(sum(4))
+# print(get_min(numbers))
+# print(get_max(numbers))
+# print(get_sum(numbers))
+# print(simple_copy(numbers))
+# print(deep_copy(deep))
+# print(join_array([1,2,3], "*"))
+# print(concatenate([1,2,3], [3,5,6]))
+# print(extend([1,2,3], [2,3,4]))
+# print(sum(4))
